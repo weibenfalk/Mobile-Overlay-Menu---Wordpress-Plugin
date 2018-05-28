@@ -15,12 +15,12 @@ add_action( 'wp_enqueue_scripts', 'register_plugin_styles' );
 add_action( 'wp_enqueue_scripts', 'register_plugin_scripts' );
 
 function register_plugin_styles() {
-	wp_register_style('wbn-overlay', plugins_url('hagbloms-overlay-menu/styles/style.css'));
+	wp_register_style('wbn-overlay', plugins_url('wbn-overlay-menu/styles/style.css'));
 	wp_enqueue_style('wbn-overlay');
 }
 
 function register_plugin_scripts() {
-	wp_register_script('wbn-overlay', plugins_url('hagbloms-overlay-menu/scripts/wbn-overlay.js'), array ('jquery'), false, false);
+	wp_register_script('wbn-overlay', plugins_url('wbn-overlay-menu/scripts/wbn-overlay.js'), array ('jquery'), false, false);
 	wp_enqueue_script('wbn-overlay');
 }
 
